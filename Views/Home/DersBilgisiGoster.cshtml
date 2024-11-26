@@ -1,0 +1,19 @@
+@model OgrenciDersYonetimSistemiMVC.Models.Ders
+
+@{
+    ViewData["Title"] = "Ders Bilgisi";
+}
+
+<h1>Ders Bilgisi</h1>
+
+<p>Ders: @Model.Ad</p>
+<p>Kredi: @Model.Kredi</p>
+<p>Öğretim Görevlisi: @Model.OgretimGorevlisi?.Ad @Model.OgretimGorevlisi?.Soyad</p>
+
+<h2>Kayıtlı Öğrenciler</h2>
+<ul>
+    @foreach (var ogrenci in Model.Ogrenciler)
+    {
+        <li>@ogrenci.Ad @ogrenci.Soyad</li>
+    }
+</ul>

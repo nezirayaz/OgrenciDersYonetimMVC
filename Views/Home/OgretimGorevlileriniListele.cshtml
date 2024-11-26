@@ -1,0 +1,29 @@
+@model List<OgrenciDersYonetimSistemiMVC.Models.OgretimGorevlisi>
+
+@{
+    ViewData["Title"] = "Öğretim Görevlileri";
+}
+
+<h1>Öğretim Görevlileri</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Unvan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ogretimGorevlisi in Model)
+        {
+            <tr>
+                <td>@ogretimGorevlisi.Id</td>
+                <td>@ogretimGorevlisi.Ad</td>
+                <td>@ogretimGorevlisi.Soyad</td>
+                <td>@ogretimGorevlisi.Unvan</td>
+            </tr>
+        }
+    </tbody>
+</table>

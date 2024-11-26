@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4">Öğrenci ve Ders Yönetim Sistemi</h1>
+        <p class="lead">Aşağıdaki bağlantıları kullanarak öğrenci, öğretim görevlisi ve ders ekleyebilirsiniz.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <a class="btn btn-primary btn-lg me-md-2" href="/Home/OgrenciEkle">Öğrenci Ekle</a>
+            <a class="btn btn-primary btn-lg me-md-2" href="/Home/OgretimGorevlisiEkle">Öğretim Görevlisi Ekle</a>
+            <a class="btn btn-primary btn-lg" href="/Home/DersEkle">Ders Ekle</a>
+        </div>
+        <hr class="my-4">
+        <p class="lead">Kaydedilen verileri görüntülemek için aşağıdaki bağlantıları kullanabilirsiniz.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <a class="btn btn-secondary btn-lg me-md-2" href="/Home/OgrencileriListele">Öğrencileri Listele</a>
+            <a class="btn btn-secondary btn-lg me-md-2" href="/Home/OgretimGorevlileriniListele">Öğretim Görevlilerini Listele</a>
+            <a class="btn btn-secondary btn-lg" href="/Home/DersleriListele">Dersleri Listele</a>
+        </div>
+    </div>
+</div>
